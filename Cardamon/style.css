@@ -1,0 +1,185 @@
+/* =========== */
+/* Boilerplate */
+/* =========== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+/* ===== */
+/* Theme */
+/* ===== */
+
+/* Typography */
+
+body,
+h1, h2, h3, h4 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+body,
+h3, h4,
+.registered-symbol {
+  font-weight: 300;
+}
+
+h1,
+.menu-section,
+.hours {
+  text-transform: uppercase;
+}
+
+.info-section {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.links-subsection,
+.menu-item-amount,
+.allergy-notice {
+  text-transform: initial;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: end;
+  padding-right: 40px;
+  color: #6c865a;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.menu-section {
+  font-size: 2rem;
+}
+
+.menu-item-amount {
+  font-size: 0.6em;
+  vertical-align: top;
+}
+
+.registered-symbol {
+  font-size: 0.45em;
+  position: absolute;
+}
+
+
+/* Color */
+
+a {
+  color: inherit;
+}
+
+.info-section {
+  color: #FFFFFF;
+}
+
+.menu-section {
+  color: #333333;
+}
+
+
+/* Background */
+
+.info-section {
+  background: url(assets/cafe.jpg);
+  background-size: cover;
+}
+
+.menu-section {
+  background: #F0F0F1;
+}
+
+
+/* Special */
+
+.menu-item-special .menu-item-name {
+  color: #8ba678;
+  text-shadow: -1.2px -1.2px #a1ba8f;
+  background: url("assets/cardamon.png") no-repeat;
+  padding-left: 50px;
+  background-size: contain;
+}
+
+
+
+/* ====== */
+/* Layout */
+/* ====== */
+
+/* Flex */
+
+body {
+  display: flex;
+}
+
+.info-section {
+  position: fixed;
+  left: 60%;
+  height: 100vh;
+  min-width: 40%;
+  padding: 0 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.other-info-section {
+  padding-bottom: 30px;
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info-subsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours-subsection,
+.location-subsection {
+  flex-basis: 20%;
+}
+
+.brand-info-subsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-subsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-section {
+  flex-basis: 60%;
+  order: -1;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-subsection {
+  margin-bottom: 10%;
+}
+
+.menu-item,
+h2:not(:first-of-type) {
+  padding-top: 17px;
+
+  display: flex;
+  justify-content: space-between;
+}
